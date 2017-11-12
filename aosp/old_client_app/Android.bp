@@ -1,0 +1,16 @@
+cc_binary {
+    name: "old_client_app",
+    host_supported: true,
+    vendor: true,
+    srcs: ["src/actions.c",        
+           "src/client.c",
+           "src/main.c"
+           ],
+
+    cflags: ["-Wall", "-Werror"],
+
+}
+
+
+
+

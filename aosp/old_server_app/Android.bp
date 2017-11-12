@@ -1,0 +1,15 @@
+cc_binary {
+    name: "old_server_app",
+    host_supported: true,
+    vendor: true,
+    srcs: ["src/server.c",
+           "src/main.c"
+           ],
+
+    cflags: ["-Wall", "-Werror"],
+
+}
+
+
+
+

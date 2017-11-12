@@ -1,0 +1,29 @@
+cc_library_shared {
+    name: "libOldClientActions",
+    vendor_available: true,
+    srcs: [
+        "actions.c",
+    ],
+    cflags: ["-Werror", "-Wno-macro-redefined"],
+}
+
+cc_library_shared {
+    name: "libOldClientSend",
+    vendor_available: true,
+    srcs: [
+        "client.c",
+    ],
+    cflags: ["-Werror", "-Wno-macro-redefined"],
+}
+
+cc_binary {
+    name: "dist_client_app",
+    vendor_available: true,
+    srcs: ["tinyplay.c"],
+    shared_libs: ["libtinyalsa"],
+    cflags: ["-Werror"],
+}
+
+
+
+
